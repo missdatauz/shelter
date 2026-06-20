@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    
+    <header>
+        <a href="#" class="logo">
+            <h1>Cozy House</h1>
+            <p>Shelter for pets in Boston</p>
+        </a>
+        <nav class="navbar">
+            <ul class="navbar__list">
+                <li><a href="#about">About the shelter</a></li>
+                <li><a href="#pets">Our pets</a></li>
+                <li><a href="#help">Help the shelter</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pets">
+         <div class="pets__container">
+            <h3 class="pets__title">Our friends who <span>are looking for a house</span></h3>
+         
+         <div class="pets__cards">
+           <article  class="pets__card">
+               <img src="../../assets/images/pets-katrine.png" alt="Black cat Katrine standing">
+               <h4>Katrine</h4>
+               <button>Learn more</button>
+              </article>
+              <article class="pets__card">
+               <img src="../../assets/images/pets-jennifer.png" alt="White puppy Jennifer sitting">
+               <h4>Jennifer</h4>
+               <button>Learn more</button>
+              </article>
+              <article class="pets__card">
+               <img src="../../assets/images/pets-woody.png" alt="Golden Woody lyimh down">
+               <h4>Woody</h4>
+               <button>Learn more</button>
+              </article>
+              <article class="pets__card">
+               <img src="../../assets/images/pets-katrine (2).png" alt="White dog lying in hands of man">
+               <h4>Sophia</h4>
+               <button>Learn more</button>
+              </article>
+              <article class="pets__card">
+               <img src="../../assets/images/pets-timmy.png" alt="Gray cat is sitting">
+               <h4>Timmy</h4>
+               <button>Learn more</button>
+              </article>
+              <article class="pets__card">
+               <img src="../../assets/images/pets-charly.png" alt="Dog is lying on the bed">
+               <h4>Charly</h4>
+               <button>Learn more</button>
+              </article>
+              <article class="pets__card">
+               <img src="../../assets/images/pets-scarlet.png" alt="puppy is standing on the ground">
+               <h4>Scarlett</h4>
+               <button>Learn more</button>
+              </article>
+              <article class="pets__card">
+               <img src="../../assets/images/pets-katrine (3).png" alt="Gray cat is sitting">
+               <h4>Freddie</h4>
+               <button>Learn more</button>
+              </article>
+         </div>
+         <nav>
+            <ul class="pets__button-lists">
+                <li><button class="pets__button1">&lt;&lt;</button></li>
+                <li><button class="pets__button2">&lt;</button></li>
+                <li><button class="pets__button-middle">1</button></li>
+                <li><button class="pets__button3">&gt;</button></li>
+                <li><button class="pets__button4">&gt;&gt;</button></li>
+            </ul>
+         </nav>
+        </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+         <section class="footer__contact">
+         <h3 class="footer__title1">For questions <span>and suggestions</span></h3>
+         <a href="" class="footer__email">
+            <img src="../../assets/icons/icon-email.svg" alt="email icon">
+             <h4>email@shelter.com</h4>
+         </a>
+         <a href="" class="footer__number">
+            <img src="../../assets/icons/icon-phone.svg" alt="A phone icon">
+            <h4>+13 674 567 75 54</h4>
+         </a>
+         </section>
+         <section class="footer__location">
+          <h3 class="footer__title2">We are waiting <span>for your visit</span></h3>
+          <a href="" class="footer__location1">
+            <img src="../../assets/icons/icon-marker.svg" alt="icon marker">
+            <h4 class="footer__location-title">1 Central Street, Boston <span>(entrance from the store)</span></h4>
+          </a>
+          <a href="" class="footer__location2">
+            <img src="../../assets/icons/icon-marker.svg" alt="icon market">
+            <h4>18 South Park, London </h4>
+          </a>
+         </section>
+         <img src="../../assets/images/footer-puppy.png" alt="Puppy is shaking hand">
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
