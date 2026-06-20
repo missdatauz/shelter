@@ -4,100 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shelter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
     <header>
         <a href="#" class="logo">
             <h1>Cozy House</h1>
             <p>Shelter for pets in Boston</p>
         </a>
         <nav class="navbar">
-            <ul>
-                <li>About the shelter</li>
-                <li>Our pets</li>
-                <li>Help the shelter</li>
-                <li>Contacts</li>
+            <ul class="navbar__list">
+                <li><a href="#about">About the shelter</a></li>
+                <li><a href="#pets">Our pets</a></li>
+                <li><a href="#help">Help the shelter</a></li>
+                <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="start-screen">
-        <h2 class="start-screen__title">Not only people need a house</h2>
-        <p class="start-screen__tex">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-        <button type="button" class="start-screen__button">Make a friend</button>
-
-        <img src="../../assets/images/start-screen-puppy.png" alt="A beagle puppy looking up and waiting for a family" class="start-screen__img"/>
+            <div class="start-screen__container">
+             
+        <div class="start-screen__content">
+        <h2 class="start-screen__title">Not only people <span>need a house</span></h2>
+        <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
+        <button type="button">Make a friend</button>
+        </div>
+        <img src="../../assets/start-screen-puppy (1).svg" alt="A beagle puppy looking up and waiting for a family" class="start-screen__img"/>
+        </div>
         </section>
 
-        <section class="about">
-            <h3>About the shelter <span>"Cozy House"</span></h3>
+         <section class="about" id="about">
+            <div class="about__container">
+                <img src="../../assets/images/about-pets.png" alt="a blond dog standing with a grey cat">
+                <div class="about__content">
+            <h3 class="about__title">About the shelter <span>"Cozy House"</span></h3>
             <p>
                 Currently we have 121 dogs and 342 cats on hands and statistics show that only 20% of them will find  a family. The others will continue to live with us and will be waiting for a lucky chance  to become dearly loved.
             </p>
             <p>
                 We feed our wards with the best food and make sure that they don't get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they bocome attached to the pets and would hardly ever leave them alone.
             </p>
-            <img src="../../assets/images/about-pets.png" alt="a blond dog standing with a grey cat">
-        </section>
+            </div>
+            
+            
+            </div>
+        </section> 
 
 
-        <section class="pets">
-          <div class="pets-content">
-            <h3>Our friends who are looking for a house</h3>
-            <div class="slider">
-              <button type="button">&larr;</button>
-
-              <article>
+        <section class="pets" id="pets">
+          <div class="pets__container">
+            <h3 class="pets__title">Our friends who <span>are looking for a house</span></h3>
+            <div class="pets__slider">
+              <button type="button" class="pets__slide-button">&larr;</button>
+            <div class="pets__slide-wrapper">
+              <article class="pets__card">
                <img src="../../assets/images/pets-katrine.png" alt="Black cat Katrine standing">
                <h4>Katrine</h4>
                <button>Learn more</button>
               </article>
-              <article>
+              <article class="pets__card">
                <img src="../../assets/images/pets-jennifer.png" alt="White puppy Jennifer sitting">
                <h4>Jennifer</h4>
                <button>Learn more</button>
               </article>
-              <article>
+              <article class="pets__card">
                <img src="../../assets/images/pets-woody.png" alt="Golden Woody lyimh down">
                <h4>Woody</h4>
                <button>Learn more</button>
               </article>
-              <article>
+              <article class="pets__card">
                <img src="../../assets/images/pets-katrine (2).png" alt="White dog lying in hands of man">
                <h4>Sophia</h4>
                <button>Learn more</button>
               </article>
-              <article>
+              <article class="pets__card">
                <img src="../../assets/images/pets-timmy.png" alt="Gray cat is sitting">
                <h4>Timmy</h4>
                <button>Learn more</button>
               </article>
-              <article>
+              <article class="pets__card">
                <img src="../../assets/images/pets-charly.png" alt="Dog is lying on the bed">
                <h4>Charly</h4>
                <button>Learn more</button>
               </article>
-              <article>
+              <article class="pets__card">
                <img src="../../assets/images/pets-scarlet.png" alt="puppy is standing on the ground">
                <h4>Scarlett</h4>
                <button>Learn more</button>
               </article>
-              <article>
+              <article class="pets__card">
                <img src="../../assets/images/pets-katrine (3).png" alt="Gray cat is sitting">
                <h4>Freddie</h4>
                <button>Learn more</button>
-              </article>
-              <button type="button">&rarr;</button>
+              </article> 
+              </div>
+              <button type="button" class="pets__slide-button">&rarr;</button>
 
             </div>
-           <button>Get to know the rest</button>
+           <a href="/pages/pets/index.html"  class="pets__button" target="_blank">Get to know the rest</a>
           </div>
         </section>
 
-        <section class="help">
+        <section class="help" id="help">
             <div class="help__container">
-            <h3>How you can help our shelter</h3>
+            <h3 class="help__title">How you can help <span>our shelter</span></h3>
+
             <ul class="help__list">
                <li>
                 <img src="../../assets/icons/icon-pet-food.svg" alt="A bowl of pet food">
@@ -112,7 +126,7 @@
                 <h4>Toys</h4>
                </li>
                <li>
-                <img src="assets/icons/icon-bowls-and-cups.svg" alt="Bowls and cups">
+                <img src="../../assets/icons/icon-bowls-and-cups.svg" alt="Bowls and cups">
                 <h4>Bowls and cups</h4>
                </li>
                <li>
@@ -135,45 +149,47 @@
                 <img src="../../assets/icons/icon-sleeping-area.svg" alt="shelter">
                 <h4>Sleeping areas</h4>
                </li>
+               
             </ul>
             </div>
         </section>
 
-        <section class="donation">
+        <section class="donation" id="contacts">
          <div class="donation__container">
            <img src="../../assets/images/donation-dog.png" alt="Dog is lying on the floor">
            <section class="donation__content">
-            <h3>You can also make a donation</h3>
+            <h3 class="donation__title">You can also <span>make a donation</span></h3>
             <h5>Name of the bank/Type of bank account</h5>
-            <a href="">
+            <a href="" class="donation__card">
                 <img src="../../assets/icons/credit-card.svg" alt="Credit card">
                 <h4>8380 2880 8028 8791 7435</h4>
             </a>
-            <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et.</p>
            </section>
          </div>
         </section>
     </main>
-    <footer>
+    
+    <footer class="footer">
         <div class="footer__container">
-         <section class="footer__contacts">
-         <h3>For questions and suggestions</h3>
-         <a href="">
+         <section class="footer__contact">
+         <h3 class="footer__title1">For questions <span>and suggestions</span></h3>
+         <a href="" class="footer__email">
             <img src="../../assets/icons/icon-email.svg" alt="email icon">
              <h4>email@shelter.com</h4>
          </a>
-         <a href="">
+         <a href="" class="footer__number">
             <img src="../../assets/icons/icon-phone.svg" alt="A phone icon">
             <h4>+13 674 567 75 54</h4>
          </a>
          </section>
          <section class="footer__location">
-          <h3>We are waiting for your visit</h3>
-          <a href="">
+          <h3 class="footer__title2">We are waiting <span>for your visit</span></h3>
+          <a href="" class="footer__location1">
             <img src="../../assets/icons/icon-marker.svg" alt="icon marker">
-            <h4>1 Central Street, Boston (entrance from the store)</h4>
+            <h4 class="footer__location-title">1 Central Street, Boston <span>(entrance from the store)</span></h4>
           </a>
-          <a href="">
+          <a href="" class="footer__location2">
             <img src="../../assets/icons/icon-marker.svg" alt="icon market">
             <h4>18 South Park, London </h4>
           </a>
@@ -181,5 +197,6 @@
          <img src="../../assets/images/footer-puppy.png" alt="Puppy is shaking hand">
         </div>
     </footer>
+</div>
 </body>
 </html>
