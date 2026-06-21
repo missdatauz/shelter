@@ -2,7 +2,9 @@
 
 #Task: https://github.com/rolling-scopes-school/tasks/blob/master/stage0.5%20Bootcamp/tasks/shelter/shelter.md
 
-#Screenshots: 
+#Screenshots: <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/7b9a59a4-2468-4457-aba4-9438aaedb307" />
+
+<img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/6eb071aa-c3c6-4ffb-b92e-c32172142bdb" />
 
 
 #Deployment: https://missdatauz.github.io/shelter/
