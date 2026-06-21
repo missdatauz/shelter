@@ -5,13 +5,13 @@
 #Screenshots: 
 
 
-#Deployment:
+#Deployment: https://missdatauz.github.io/shelter/
 
 #Done 22.06 / deadline 22/06/04:59
 
 # Maximum score: 110 points
 
-    #Main page (45 points)
+#Main page (45 points)
 Layout matches the design at 1280px +15
 Layout matches the design at 768px +15
 Layout matches the design at 320px +15
