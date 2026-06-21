@@ -35,7 +35,7 @@ p {
 
 .container {
     margin: auto;
-    width: 1280px;
+    max-width: 1280px;
     height: auto;
     background: var(--start-screen-background);
 }
@@ -225,6 +225,55 @@ align-items: center;
 color: var(--color-primary);
 gap: 20px; 
 text-decoration: none;
+}
+/* @media */
+@media (max-width: 768px) {
+    .logo {
+        margin-top: 10px;
+    }
+    .logo h1 {
+        font-weight: normal;
+    }
+    .logo p {
+        font-size: 0.8rem;
+        
+    }
+    .pets__cards {
+        display: grid;
+        grid-template-columns: auto auto;
+     }
+     .pets__card:nth-child(n+7) {
+        display: none;
+     }
+    .pets__title {
+        font-size: 2.2rem;
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
+    .footer {
+    height: auto;
+    
+}
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer__content {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 50px
+}
+.footer__puppy {
+    width: 300px;
+    height: 320px;
+    margin: auto;
+} 
+
+
+
 }
 
     
