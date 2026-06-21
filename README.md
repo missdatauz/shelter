@@ -7,7 +7,9 @@
 <img width="1366" height="768" alt="Image" src="https://github.com/user-attachments/assets/6eb071aa-c3c6-4ffb-b92e-c32172142bdb" />
 
 
-#Deployment: https://missdatauz.github.io/shelter/
+#Deployment: 
+* Main Page: [Live Link](https://missdatauz.github.io/shelter/pages/main/index.html)
+* Pets Page: [Live Link](https://missdatauz.github.io/shelter/pages/pets/index.html)
 
 #Done 22.06 / deadline 22/06/04:59
 
