@@ -4,13 +4,6 @@ const hamburgerMenu = document.getElementById("hamburger-menu")
 const overlay = document.getElementById("overlay")
 const navlinks = document.querySelectorAll(".nav-link");
 
-
-let cardCount = 3;
-if (window.innerWidth < 1280 && window.innerWidth >= 768) {
-    cardCount = 2;
-} else if (window.innerWidth < 768) {
-    cardCount = 1;
-}
 navlinks.forEach(link => {
     link.addEventListener('click', closeNavbar)
 })
@@ -31,12 +24,9 @@ document.body.classList.toggle("lock");
 }
 
 
-function getCardCount() {
-    if (window.innerWidth >= 1280) return 3;
-    if (window.innerWidth >= 768) return 2;
-    return 1;
-}
+
 
 
 hamburgerMenu.addEventListener('click', openNavbar)
 overlay.addEventListener('click', closeNavbar);
+
