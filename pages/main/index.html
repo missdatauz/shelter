@@ -13,14 +13,22 @@
             <h1>Cozy House</h1>
             <p>Shelter for pets in Boston</p>
         </a>
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <ul class="navbar__list">
-                <li><a href="#about">About the shelter</a></li>
-                <li><a href="#pets">Our pets</a></li>
-                <li><a href="#help">Help the shelter</a></li>
-                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#about" class="nav-link active">About the shelter</a></li>
+                <li><a href="#pets"class="nav-link">Our pets</a></li>
+                <li><a href="#help" class="nav-link">Help the shelter</a></li>
+                <li><a href="#contacts" class="nav-link">Contacts</a></li>
             </ul>
         </nav>
+
+        <div id="overlay" class="overlay"></div>
+
+        <div class="hamburger-menu" id="hamburger-menu">
+          <div class="burger-menu__line"></div>
+          <div class="burger-menu__line"></div>
+          <div class="burger-menu__line"></div>
+        </div>
     </header>
 
     <main>
@@ -29,9 +37,9 @@
         <div class="start-screen__content">
         <h2 class="start-screen__title">Not only people <span>need a house</span></h2>
         <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-        <button type="button">Make a friend</button>
+        <a href="#pets">Make a friend </a>
         </div>
-        <img src="../../assets/start-screen-puppy (1).svg" alt="A beagle puppy looking up and waiting for a family" class="start-screen__img"/>
+        <img src="../../assets/images/start-screen-puppy (1).svg" alt="A beagle puppy looking up and waiting for a family" class="start-screen__img"/>
         </div>
         </section>
 
@@ -47,63 +55,66 @@
                 We feed our wards with the best food and make sure that they don't get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they bocome attached to the pets and would hardly ever leave them alone.
             </p>
             </div>
-            
-            
-            </div>
+             </div>
         </section> 
 
-
+<!-- Pets -->
         <section class="pets" id="pets">
+
           <div class="pets__container">
+
             <h3 class="pets__title">Our friends who <span>are looking for a house</span></h3>
+
             <div class="pets__slider">
-              <button type="button" class="pets__slide-button">&larr;</button>
+              <button type="button" class="pets__slide-button prev">&larr;</button>
             <div class="pets__slide-wrapper">
-              <article class="pets__card">
+              <div class="pets__track">
+              <article class="pets__card" data-name="Katrine">
                <img src="../../assets/images/pets-katrine.png" alt="Black cat Katrine standing">
                <h4>Katrine</h4>
                <button>Learn more</button>
               </article>
-              <article class="pets__card">
+              <article class="pets__card" data-name="Jennifer">
                <img src="../../assets/images/pets-jennifer.png" alt="White puppy Jennifer sitting">
                <h4>Jennifer</h4>
                <button>Learn more</button>
               </article>
-              <article class="pets__card">
+              <article class="pets__card" data-name="Woody">
                <img src="../../assets/images/pets-woody.png" alt="Golden Woody lyimh down">
                <h4>Woody</h4>
                <button>Learn more</button>
               </article>
-              <article class="pets__card">
+              <article class="pets__card" data-name="Sophia">
                <img src="../../assets/images/pets-katrine (2).png" alt="White dog lying in hands of man">
                <h4>Sophia</h4>
                <button>Learn more</button>
               </article>
-              <article class="pets__card">
+              <article class="pets__card" data-name="Timmy">
                <img src="../../assets/images/pets-timmy.png" alt="Gray cat is sitting">
                <h4>Timmy</h4>
                <button>Learn more</button>
               </article>
-              <article class="pets__card">
+              <article class="pets__card" data-name="Charly">
                <img src="../../assets/images/pets-charly.png" alt="Dog is lying on the bed">
                <h4>Charly</h4>
                <button>Learn more</button>
               </article>
-              <article class="pets__card">
+              <article class="pets__card" data-name="Scarlett">
                <img src="../../assets/images/pets-scarlet.png" alt="puppy is standing on the ground">
                <h4>Scarlett</h4>
                <button>Learn more</button>
               </article>
-              <article class="pets__card">
+              <article class="pets__card" data-name="Freddie">
                <img src="../../assets/images/pets-katrine (3).png" alt="Gray cat is sitting">
                <h4>Freddie</h4>
                <button>Learn more</button>
               </article> 
               </div>
-              <button type="button" class="pets__slide-button">&rarr;</button>
+              </div>
+              <button type="button" class="pets__slide-button next">&rarr;</button>
 
             </div>
-           <button  class="pets__button" >Get to know the rest</button>
+           <a href="../pets/index.html" target="_blank" class="pets__button" >Get to know the rest</a>
           </div>
         </section>
 
@@ -198,6 +209,26 @@
          <img class="footer__puppy" src="../../assets/images/footer-puppy.png" alt="Puppy is shaking hand">
         </div>
     </footer>
+   <div class="popup-overlay" id="popup-overlay">
+    <div class="popup">
+      <button class="close-btn", id="closeBtn">&times;</button>
+ <div class="popup-container">
+     <img id="popupImg" src="" alt=""> 
+     <section class="popup-content">
+      <h3 id="popupTitle"></h3>
+      <h4 id="popupSubtitle"></h4>
+      <h5 id="popupDescription"></h5>
+      <ul id="popupList">
+       <li><strong>Age:</strong> <span id="age"></span></li>
+       <li><strong>Inoculation:</strong> <span  id="inoculations"></span></li>
+       <li><strong>Diseases:</strong> <span id="diseases"></span></li>
+       <li><strong>Parasites:</strong> <span id="parasites"></span></li> 
+      </ul>
+     </section>
+    </div>
+    </div>
+   </div> 
 </div>
+<script src="script.js"></script>
 </body>
 </html>
